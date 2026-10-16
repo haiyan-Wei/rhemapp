@@ -1,11 +1,88 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>rhem.app</title>
+  <title>RHEM – Rangeland Hydrology and Erosion Model</title>
+  <meta name="description" content="Quick access to the Rangeland Hydrology and Erosion Model (RHEM) Web Tool for predicting runoff and erosion on rangelands.">
+  <style>
+    :root {
+      --bg: #f6f3ec;
+      --card: #ffffff;
+      --text: #2b2a26;
+      --muted: #6b675e;
+      --accent: #8a5a2b;
+      --accent-dark: #6e4620;
+      --line: #e4ddd0;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.55;
+      padding: 24px 16px;
+    }
+    main {
+      max-width: 620px;
+      width: 100%;
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 40px 36px;
+    }
+    h1 {
+      margin: 0;
+      font-size: 2.6rem;
+      letter-spacing: 0.04em;
+      color: var(--accent);
+    }
+    .subtitle {
+      margin: 4px 0 20px;
+      font-size: 1.1rem;
+      color: var(--muted);
+    }
+    p { margin: 0 0 24px; }
+    .primary {
+      display: inline-block;
+      background: var(--accent);
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      padding: 13px 26px;
+      border-radius: 8px;
+    }
+    .primary:hover { background: var(--accent-dark); }
+    .coming {
+      margin-top: 32px;
+      padding-top: 20px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-style: italic;
+    }
+    @media (max-width: 480px) {
+      main { padding: 28px 20px; }
+      h1 { font-size: 2.1rem; }
+    }
+  </style>
 </head>
-<body style="font-family: sans-serif; max-width: 600px; margin: 80px auto; padding: 0 16px;">
-  <p>We're getting ready!</p>
+<body>
+  <main>
+    <h1>RHEM</h1>
+    <div class="subtitle">Rangeland Hydrology and Erosion Model</div>
+
+    <p>A process-based model for predicting runoff and soil erosion on rangelands and
+      assessing the effects of conservation practices. The web tool lets you describe a site
+      using common rangeland characteristics, run the model, and compare scenarios.</p>
+
+    <a class="primary" href="https://apps.tucson.ars.ag.gov/rhem/">Open the RHEM Web Tool</a>
+
+    <div class="coming">More to come — stay tuned.</div>
+  </main>
 </body>
 </html>
